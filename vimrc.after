@@ -1,0 +1,18 @@
+" let NERDTreeWinSize=16
+" Size of the window
+set lines=50 columns=130
+
+" have long lines wrap by defaults
+set wrap
+
+" tagbar setting
+"
+
+" settings for ctrlp
+let g:ctrlp_root_markers = ['root.dir']
+let g:ctrlp_working_path_mode = 2
+
+set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip   " Linux/MacOSX
+
+
+
