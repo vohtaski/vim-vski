@@ -12,6 +12,10 @@ set textwidth=0 wrapmargin=0
 set iskeyword+=_
 autocmd FileType tex setlocal isk+=_
 
+"set spell check
+autocmd FileType tex setlocal spell
+"set spell
+
 " tagbar setting
 "
 
@@ -20,7 +24,6 @@ let g:ctrlp_root_markers = ['root.dir']
 let g:ctrlp_working_path_mode = 2
 
 set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*/cache/*   " Linux/MacOSX
-
 
 
 
