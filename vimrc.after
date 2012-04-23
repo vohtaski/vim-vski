@@ -1,9 +1,13 @@
 " let NERDTreeWinSize=16
 " Size of the window
-set lines=50 columns=130
+"set lines=50 columns=130
 
 " have long lines wrap by defaults
 set wrap
+set textwidth=0 wrapmargin=0
+
+" make @ and underscore to be part of the words
+set iskeyword+=_
 
 " tagbar setting
 "
@@ -12,7 +16,7 @@ set wrap
 let g:ctrlp_root_markers = ['root.dir']
 let g:ctrlp_working_path_mode = 2
 
-set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*.zip   " Linux/MacOSX
+set wildignore+=*/tmp/*,*/log/*,*.so,*.swp,*/cache/*   " Linux/MacOSX
 
 
 
