@@ -1,3 +1,5 @@
+let g:tagbar_autoclose=1
+
 " let NERDTreeWinSize=16
 " Size of the window
 "set lines=50 columns=130
