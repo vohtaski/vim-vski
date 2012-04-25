@@ -5,16 +5,17 @@ let g:tagbar_autoclose=1
 " set lines=50 columns=130
 
 " have long lines wrap by defaults
-"set nowrap
+set nowrap
 set textwidth=100
 "wrapmargin=0
 
 " make @ and underscore to be part of the words
 set iskeyword+=_
-autocmd FileType tex setlocal isk+=_
 
-"set spell check
+"specific to Tex set spell check
 autocmd FileType tex setlocal spell
+autocmd FileType tex setlocal isk+=_
+autocmd FileType tex setlocal nowrap
 
 if has("spell")
   " turn spelling on by default
