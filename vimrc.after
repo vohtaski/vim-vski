@@ -5,8 +5,9 @@ let g:tagbar_autoclose=1
 " set lines=50 columns=130
 
 " have long lines wrap by defaults
-set wrap
-set textwidth=0 wrapmargin=0
+"set nowrap
+set textwidth=100
+"wrapmargin=0
 
 " make @ and underscore to be part of the words
 set iskeyword+=_
@@ -14,7 +15,20 @@ autocmd FileType tex setlocal isk+=_
 
 "set spell check
 autocmd FileType tex setlocal spell
-"set spell
+
+if has("spell")
+  " turn spelling on by default
+  set spell
+
+  " toggle spelling with F4 key
+  map <F4> :set spell!<CR><Bar>:echo "Spell Check: " . strpart("OffOn", 3 * &spell, 3)<CR>
+
+  " they were using white on white
+  highlight PmenuSel ctermfg=black ctermbg=lightgray
+
+  " limit it to just the top 10 items
+  set sps=best,10
+endif
 
 " tagbar setting
 "
