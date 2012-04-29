@@ -1,0 +1,11 @@
+/*jshint bitwise: true, regexp: true, eqeqeq: true, forin: true, immed: true, laxcomma: true, laxbreak: true, newcap: true, undef: true, trailing: true, indent: 2, maxlen: 100, asi: true,
+plusplus: false,
+white: false,
+browser: true,
+node: true,
+curly: false,
+onecase: true,
+*/
+/*global exports, console, setInterval, setTimeout, jQuery, $ */
+
+/* vim: set ft=javascript: */
