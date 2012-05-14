@@ -1,15 +1,27 @@
+# set vi mode for bash
 set -o vi
-
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export PATH=/Applications/TextMate.app/Contents/Resources:$PATH
-export PATH=/usr/local/sbin:/usr/local/mysql/bin:/Users/evgeny/go/bin:$PATH
-export PATH=$HOME/bin:$PATH
-export JAVA_HOME=/Library/Java/Home
-export CATALINA_HOME=/Library/Tomcat/Home
 
 # Terminal colours
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# Graasp
+alias gprod="ssh admin@graasp.epfl.ch"
+alias gdev="ssh admin@graaspdev.epfl.ch"
+
+
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/usr/local/sbin:/usr/local/mysql/bin:/Users/evgeny/go/bin:$PATH
+export PATH=$HOME/bin:$PATH
+export JAVA_HOME=/Library/Java/Home
+export CATALINA_HOME=/Library/Tomcat/Home
+export GOROOT=$HOME/go
+export GOBIN=$GOROOT/bin
+export GOARCH=amd64
+
+alias gadgets='cd /Library/WebServer/Documents/gadgets'
+alias www='cd /Library/WebServer/Documents'
+alias moodle='cd /Library/WebServer/Documents/moodle'
 
 alias rm='~/bin/del'
 
@@ -34,8 +46,6 @@ alias nginx_stop="sudo launchctl unload -w /Library/LaunchDaemons/org.macports.n
 alias haproxy_start="sudo /usr/local/sbin/haproxy -f /Users/evgeny/work/slicehost/sportaxy/config/server/haproxy_local.conf"
 alias shindig="cd /Library/WebServer/Documents/shindig_graaasp_2.0"
 alias www="cd /Library/WebServer/Documents/"
-
-export GRAASP="http://iamac54.epfl.ch/repo/svn/graaasp"
 
 
 # run servers
