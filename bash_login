@@ -4,6 +4,10 @@ set -o vi
 # Terminal colours
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
 
 # Graasp
 alias gprod="ssh admin@graasp.epfl.ch"
@@ -140,3 +144,5 @@ set meta-flag on
 set input-meta on
 set output-meta on
 set convert-meta off
+
+
