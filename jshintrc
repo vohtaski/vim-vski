@@ -6,6 +6,6 @@ node: true,
 curly: false,
 onecase: true,
 */
-/*global exports, console, setInterval, setTimeout, jQuery, $ */
+/*global exports, console, setInterval, setTimeout, jQuery, $, grabme, module */
 
 /* vim: set ft=javascript: */
