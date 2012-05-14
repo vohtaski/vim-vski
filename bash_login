@@ -12,7 +12,7 @@ fi
 # Graasp
 alias gprod="ssh admin@graasp.epfl.ch"
 alias gdev="ssh admin@graaspdev.epfl.ch"
-
+alias work="ssh assistants@iamac71.epfl.ch"
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/usr/local/sbin:/usr/local/mysql/bin:/Users/evgeny/go/bin:$PATH
