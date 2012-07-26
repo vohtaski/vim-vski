@@ -13,28 +13,28 @@ snippet *f
 	 * @returns {${5:String|Object|Array|Boolean|Number}} ${6:description}
 	 */${7}
 # @deprecated
-snippet dep
+snippet @dep
 	@deprecated
 # @author
-snippet aut
+snippet @aut
 	@author ${1:Author}${2}
 # @extends
-snippet ext 
+snippet @ext 
 	@extends ${1:ClassName}${2}
 # @private
-snippet pri
+snippet @pri
 	@private${2}
 # @param
-snippet par
+snippet @par
 	@param {${1:String|Object|Array|Boolean|Number}} ${2:name} ${3:description}${4}
 # @requires
-snippet req
+snippet @req
 	@requires ${1:ClassName}${2}
 # @returns
-snippet ret
+snippet @ret
 	@returns {${1:String|Object|Array|Boolean|Number}} ${2:description}
 # @throws
-snippet thr
+snippet @thr
 	@throws ${1:ExceptionType}${2}
 # Console.log function
 snippet log
@@ -44,13 +44,23 @@ snippet eq
 	should.equal(${1:"test"})
 # Exports
 snippet exp
-	exports.${1:functionName} = function ${1}(${3:arg}) {
+	exports.${1:functionName} = function ${1} (${3:arg}) {
 	  ${4:// body }
 	}
 # Gently
 snippet gently
 	gently.expect(${1:Obj}, "${2:func}", function (${3:par}) {
 	  ${4:return ""}
+	})
+# describe for mocha
+snippet desc
+	describe("${1:Test}", function () {
+	  ${2}
+	})
+# it for mocha
+snippet it
+	it("should ${1:do things}", function () {
+	  ${2}
 	})
 # Test not implemented
 snippet test
@@ -64,12 +74,12 @@ snippet :f
 	},
 # Prototype: Obj.f = function f(){}
 snippet .f
-	${1:.prototype}.${2:methodName} = function $2(${3:arg}) {
+	${1:.prototype}.${2:methodName} = function $2 (${3:arg}) {
 		${4:// body...}
 	}
 # Function
 snippet fun
-	function ${1:functionName}(${2:arg}) {
+	function ${1:functionName} (${2:arg}) {
 		${3:// body...}
 	}
 # Anonymous Function
